@@ -1,9 +1,21 @@
 function checkPrime(num){
-for(let i=i;i<=num;i++){
-if(num%i{
+let count=0;
+for(let i=1;i<=num;i++){
+if(num%i==0){
+count++;
+}
+}
+if(count==2){
 return true;
 }
-}
+else{
 return false;
 }
-checkprime(10)
+}
+let ans=checkPrime(13);
+if(ans==true){
+console.log("Prime")
+}
+else{
+console.log("Not Prime")
+}
